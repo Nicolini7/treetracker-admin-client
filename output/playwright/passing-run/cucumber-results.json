@@ -1,0 +1,207 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "preserve-species-and-tags-loaded-concurrently;capture-details-retain-both-fields-when-the-species-response-finishes-first",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Capture details retain both fields when the species response finishes first",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 225099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "a local verifier opens capture 42 details",
+            "match": {
+              "location": "capture-detail.steps.cjs:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13653065200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "species and tag requests are both pending",
+            "match": {
+              "location": "capture-detail.steps.cjs:89"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1676935099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the \"species\" response finishes first",
+            "match": {
+              "location": "capture-detail.steps.cjs:99"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7814200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "its detail is visible while the other response is pending",
+            "match": {
+              "location": "capture-detail.steps.cjs:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1552332700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the remaining response finishes",
+            "match": {
+              "location": "capture-detail.steps.cjs:116"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7809799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Mango and healthy are both visible in capture details",
+            "match": {
+              "location": "capture-detail.steps.cjs:120"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1531148199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "preserve-species-and-tags-loaded-concurrently;capture-details-retain-both-fields-when-the-tag-response-finishes-first",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Capture details retain both fields when the tag response finishes first",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "a local verifier opens capture 42 details",
+            "match": {
+              "location": "capture-detail.steps.cjs:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10545126100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "species and tag requests are both pending",
+            "match": {
+              "location": "capture-detail.steps.cjs:89"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1580532400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the \"tag\" response finishes first",
+            "match": {
+              "location": "capture-detail.steps.cjs:99"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3267099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "its detail is visible while the other response is pending",
+            "match": {
+              "location": "capture-detail.steps.cjs:104"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1753781100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the remaining response finishes",
+            "match": {
+              "location": "capture-detail.steps.cjs:116"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3808600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Mango and healthy are both visible in capture details",
+            "match": {
+              "location": "capture-detail.steps.cjs:120"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1642710700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "preserve-species-and-tags-loaded-concurrently",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Preserve species and tags loaded concurrently",
+    "tags": [],
+    "uri": "capture-detail.feature"
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "order": "species",
+    "stage": "both-pending",
+    "at": "2026-10-29T21:09:01.165Z",
+    "captureId": 42,
+    "requested": [
+      "species",
+      "tag"
+    ],
+    "completed": [],
+    "pending": [
+      "species",
+      "tag"
+    ]
+  },
+  {
+    "order": "species",
+    "stage": "one-response",
+    "at": "2026-10-29T21:09:03.894Z",
+    "captureId": 42,
+    "requested": [
+      "species",
+      "tag"
+    ],
+    "completed": [
+      "species"
+    ],
+    "pending": [
+      "tag"
+    ]
+  },
+  {
+    "order": "species",
+    "stage": "both-responses",
+    "at": "2026-10-29T21:09:05.426Z",
+    "captureId": 42,
+    "requested": [
+      "species",
+      "tag"
+    ],
+    "completed": [
+      "species",
+      "tag"
+    ],
+    "pending": []
+  },
+  {
+    "order": "tag",
+    "stage": "both-pending",
+    "at": "2026-10-29T21:09:16.483Z",
+    "captureId": 42,
+    "requested": [
+      "species",
+      "tag"
+    ],
+    "completed": [],
+    "pending": [
+      "species",
+      "tag"
+    ]
+  },
+  {
+    "order": "tag",
+    "stage": "one-response",
+    "at": "2026-10-29T21:09:19.196Z",
+    "captureId": 42,
+    "requested": [
+      "species",
+      "tag"
+    ],
+    "completed": [
+      "tag"
+    ],
+    "pending": [
+      "species"
+    ]
+  },
+  {
+    "order": "tag",
+    "stage": "both-responses",
+    "at": "2026-10-29T21:09:20.934Z",
+    "captureId": 42,
+    "requested": [
+      "species",
+      "tag"
+    ],
+    "completed": [
+      "tag",
+      "species"
+    ],
+    "pending": []
+  }
+]
