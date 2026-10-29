@@ -1,0 +1,80 @@
+[
+  {
+    "stage": "two-pending",
+    "at": "2026-10-29T20:52:59.730Z",
+    "approved": true,
+    "writes": [
+      {
+        "id": 1,
+        "body": {
+          "treeId": 42,
+          "tagId": 7
+        },
+        "done": false
+      },
+      {
+        "id": 2,
+        "body": {
+          "treeId": 42,
+          "tagId": 9
+        },
+        "done": false
+      }
+    ],
+    "persistedTags": 0,
+    "pendingTags": 2,
+    "reloadsAfterTagRequests": 0
+  },
+  {
+    "stage": "one-pending",
+    "at": "2026-10-29T20:53:07.610Z",
+    "approved": true,
+    "writes": [
+      {
+        "id": 1,
+        "body": {
+          "treeId": 42,
+          "tagId": 7
+        },
+        "done": true
+      },
+      {
+        "id": 2,
+        "body": {
+          "treeId": 42,
+          "tagId": 9
+        },
+        "done": false
+      }
+    ],
+    "persistedTags": 1,
+    "pendingTags": 1,
+    "reloadsAfterTagRequests": 0
+  },
+  {
+    "stage": "completed",
+    "at": "2026-10-29T20:53:13.333Z",
+    "approved": true,
+    "writes": [
+      {
+        "id": 1,
+        "body": {
+          "treeId": 42,
+          "tagId": 7
+        },
+        "done": true
+      },
+      {
+        "id": 2,
+        "body": {
+          "treeId": 42,
+          "tagId": 9
+        },
+        "done": true
+      }
+    ],
+    "persistedTags": 2,
+    "pendingTags": 0,
+    "reloadsAfterTagRequests": 1
+  }
+]

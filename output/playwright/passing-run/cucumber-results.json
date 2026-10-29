@@ -1,0 +1,128 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "complete-capture-approval-after-saving-its-tags;approval-remains-in-progress-until-both-additional-tags-are-saved",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Approval remains in progress until both additional tags are saved",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "a local verifier is viewing one pending capture",
+            "match": {
+              "location": "capture-tag-writes.steps.cjs:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50404088500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "the capture is selected with the additional tags healthy and native",
+            "match": {
+              "location": "capture-tag-writes.steps.cjs:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24314167600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the verifier submits approval",
+            "match": {
+              "location": "capture-tag-writes.steps.cjs:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10486720999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "approval remains in progress while both tag writes are pending",
+            "match": {
+              "location": "capture-tag-writes.steps.cjs:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11550614500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the first tag write finishes",
+            "match": {
+              "location": "capture-tag-writes.steps.cjs:82"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20318199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "approval remains in progress while the second tag write is pending",
+            "match": {
+              "location": "capture-tag-writes.steps.cjs:86"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6359772300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "the second tag write finishes",
+            "match": {
+              "location": "capture-tag-writes.steps.cjs:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8372100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "approval finishes and the capture list refreshes",
+            "match": {
+              "location": "capture-tag-writes.steps.cjs:99"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6414097600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "complete-capture-approval-after-saving-its-tags",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Complete capture approval after saving its tags",
+    "tags": [],
+    "uri": "capture-tag-writes.feature"
+  }
+]
